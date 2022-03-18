@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pages.css" />
+
+    <title>JS-Website</title>
+  </head>
+  <body>
+    <div class="theme-panel">
+      <div class="theme-body">
+        <span>Change Theme</span>
+        <div class="btn-group">
+          <button type="submit" data-toggle="light" class="switcher-btn">
+            Light
+          </button>
+          <button type="submit" data-toggle="dark" class="switcher-btn">
+            Dark
+          </button>
+        </div>
+        <button type="submit" class="theme-tab">
+          <span class="tooltip">TOGGLE HERE TO CHANGE THEME</span>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+    <main class="site-wrapper">
+      <header class="site-header">
+        <nav class="navbar">
+          <div class="brand-logo">
+            <a href="/"><h2>folio.</h2></a>
+          </div>
+          <div class="navbar-nav">
+            <ul class="ul-defaults-none main-menu">
+              <li class="nav-item">Home</li>
+              <li class="nav-item" data-open="about">About Me</li>
+              <li class="nav-item" data-open="contact">Contact</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-bg">
+        <div class="container">
+          <div class="hero-content">
+            <div class="code-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h2 class="header-large">Code. Eat. Sleep</h2>
+            <div class="sub-header">
+              I create meaningful solutions for your brands and products.
+              <br />
+              Give you customers the best experience possible.
+            </div>
+            <div class="btn btn-primary round-pill" data-open="contact">
+              <a href="#">Let's Talk Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio section -->
+      <section class="portfolio-section">
+        <div class="container search-container">
+          <label for="search">
+            <input
+              autocomplete="off"
+              id="search"
+              placeholder="Search..."
+              type="text"
+              class="search-input"
+            />
+            <i class="fas fa-search"></i>
+          </label>
+          <ul class="portfolio-filter-nav ul-defaults-none">
+            <li data-filter="all" class="filter-link active">All Work</li>
+            <li data-filter="web" class="filter-link">Web Development</li>
+            <li data-filter="app" class="filter-link">
+              Application Development
+            </li>
+            <li data-filter="ui" class="filter-link">UI Design</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-grid"></div>
+      </section>
+
+      <!-- MODALS -->
+
+      <!-- About Page modal -->
+
+      <div
+        id="about"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>About Page</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assets/images/cool_gorilla.jpg" alt="head-shot" />
+            </div>
+            <h2>Alex Beltz</h2>
+            <p>text 1</p>
+            <p>text 2</p>
+            <div>
+              <div>Email me:</div>
+              <a href="mailto:beltz.a@outlook.com">beltz.a@outlook.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Page modal -->
+
+      <div
+        id="contact"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>Contact Page</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assets/images/cool_gorilla.jpg" alt="head-shot" />
+            </div>
+            <h2>Alex Beltz</h2>
+            <p>text 1</p>
+            <p>text 2</p>
+            <div>
+              <div>Email me:</div>
+              <a href="mailto:beltz.a@outlook.com">beltz.a@outlook.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup modals -->
+      
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
